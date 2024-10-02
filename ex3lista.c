@@ -1,19 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int i, n[5];
-    float m;
-	int soma = 0;
+    int i, n;
+    float m,soma;
     for (i = 0; i < 5; i++) {
-        printf("Digite um número: ");
-        scanf("%d", &n[i]);
+        printf("Digite um numero: ");
+        scanf("%d", &n);
+		soma += n;
     }
-    
-    for (i = 0; i < 5; i++) {
-        soma += n[i];
-    }
-    m = soma / 5.0;
-    printf("A média é: %.2f\n", m);
+    m = soma / 5;
+    printf("A media eh: %.2f\n", m);
     return 0;
 }
-
